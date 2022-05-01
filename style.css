@@ -1,0 +1,40 @@
+body {
+    transition: background-color .2s ease;
+    text-align: center;
+}
+
+.title-color {
+    font-size: clamp(1rem, 9vw, 4rem);
+    margin-top: 150px !important;
+    font-family: monospace;
+    text-shadow: 2px 2px 0 #fff;
+}
+
+.btn-changer {
+    position: absolute;
+    margin-top: 50px;
+    bottom: 90px;
+    width: 100%;
+}
+
+.btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid red;
+    margin: 5px;
+}
+
+@media(max-width: 768px) {
+    #current-color {
+        margin-top: 10px !important;
+    }
+    .btn-changer {
+        bottom: 20px;
+    }
+    .btn {
+        margin: 10px;
+        width: 40px;
+        height: 40px;
+    }
+}
